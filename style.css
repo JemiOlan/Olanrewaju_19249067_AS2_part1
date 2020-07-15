@@ -1,0 +1,133 @@
+/*cental font style and text alignment,  i got the font- from googlefont, ref on index.html head*/
+html, body {
+    margin: 0%;
+    font-family: 'Yeon Sung', cursive;
+    text-align: center;
+    height: 100%;
+}
+
+/* this is the profile pics, the style , border style and tranforming my pics code was gotten from https://developer.mozilla.org/en-US/docs/Web/CSS/transform  */
+.profile-pic {
+    margin: 2.5em;
+    border-style: none;
+    border-radius: 25%;
+    filter: grayscale(0);
+    width: 25vw;
+    color: rgb(36, 16, 16);
+}
+
+/*this is start of the navigation bar on the page designing */
+.nav-bar {
+    display: flex;
+    height: 20%;
+}
+
+/*background colour and positioning of the left side of the navigation bar*/
+.navbar-left{
+flex-basis: 20%;
+background: rgb(233, 230, 230);
+display: grid;
+}
+
+/*display of the "Home" on the webpage*/
+.navbar-left ul{
+    float: right;
+    padding: 35px 40px 10px 40px;
+}
+/*display of the "Home" on the webpage without bullet point and line due to hyperlink*/
+.navbar-left ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+/*display of the "Home" on the webpage showing the font sizr and display colour*/
+.navbar-left ul li a {
+    transition: all 200ms ease-in-out;
+    color: rgb(37, 33, 159);
+    font-size: 1.5em;
+}
+/*display of the "Home" on the webpage* after a mouse has hovered over it*/
+.navbar-left ul li a:hover {
+    color: rgb(98, 236, 98);
+}
+
+.navbar-left ul li a:hover:before, .navbar-right ul li a:hover:after{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+.navbar-right{
+flex-basis: 81%;
+display: grid;
+background-color: rgb(233, 230, 230);
+}
+/*background:rgb(197, 140, 192); */
+.navbar-right ul{
+    float: right;
+    padding: 35px 40px 10px 40px;
+}
+/*background colour and positioning of the right side of the navigation bar*/
+.navbar-right ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.navbar-right ul li a {
+    transition: all 200ms ease-in-out;
+    color: rgb(37, 33, 159);
+    font-size: 1.25rem;
+}
+/*background colour while the mouse isd overing on the right side of the navigation bar*/
+.navbar-right ul li a:hover {
+color: rgb(220, 25, 96);
+}
+/*background colour while the mouse id overing on the right side of the navigation bar*/
+.navbar-right ul li a:hover:before, .navbar-right ul li a:hover:after{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+body{
+    background-image: url(images/sky_backgroundpic.jpg);
+    /*linear-gradient(150deg, rgb(184, 68, 168) 39%, rgb(201, 219, 219) 96%); 
+    */
+}
+/*this is the font colour for H1*/
+h1 {
+    color: lightcyan;
+}
+/*this is the font colour for 3*/
+h3{
+    color: lightyellow;
+}
+/*this is the font colour for p and size*/
+p {
+    color:  lightcyan;
+    font-size: 1.5em;
+}
+
+/*this is the font colour for a  and the prevention of inline apperarance for the logos*/
+a{
+    color: lightyellow;
+    text-decoration: none;
+}
+
+/*this is the footer style and colour, design positioning and fonts found in the footer positioning. codes from previous assignment1*/
+.footer{
+    position: sticky;
+    bottom: 0;
+    margin-bottom:0;
+   color:  rgb(37, 33, 159);
+    background-color: rgb(233, 230, 230);
+    width: 100%;
+    height: 10%;
+    float: right;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 1px;
+}
+
